@@ -6,6 +6,7 @@ var test = (function() {
   var notUsed;
 
   var what;
+  what = 'im making a change';
 
   function ready(fn) {
     if (document.readyState !== 'loading') {
@@ -65,5 +66,9 @@ var test = (function() {
     const value = document.getElementById('p7').nodeValue;
     console.log(inner);
     console.log(value);
+
+    const p = document.createElement('p');
+    p.appendChild(document.createTextNode('This is a new text node, yee'));
+    document.getElementById('wrapper').appendChild(p);
   });
 })();

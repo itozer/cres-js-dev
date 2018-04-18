@@ -1,0 +1,10 @@
+/**
+----------------------------------------
+webpack
+----------------------------------------
+
+webpack --watch
+  webpack will watch the directory where all of your files are, and when a change is made, will run automatically (quickly because it keeps everything in memory)
+
+
+*/

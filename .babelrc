@@ -1,0 +1,26 @@
+
+/**
+presets are group of plugins
+a plugin does the transformation. IE transforming arrow functions to functions
+
+we could use "es2015" (es6) in our presets, but then it would transpile all es6 to es5, which we dont 
+want to do because the browser can now understand a lot of es6. SO, "env" was created
+
+"loose" mode basically removes the edge cases that are hardly ever hit, and as a result makes the code base included much smaller
+
+"modules": false tells babel not to transpile the imports. since we are using webpack2 and es6 modules, we want to set this to false, so that webpack can handle this, not babel, so that webpack can do a static analysic (tree shaking) to include only code that is used
+
+*/
+
+{
+  "presets": [ 
+    //"react",
+    ["env", {
+      "targets": {
+        "browsers": "last 2 versions"
+      },
+      "loose": true,
+      "modules": false
+    }]
+  ]
+}
