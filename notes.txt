@@ -8,3 +8,35 @@ webpack --watch
 
 
 */
+
+
+
+
+/**
+----------------------------------------
+prettier
+----------------------------------------
+
+the existance of node_modules within the source code seems to cause prettier to look there for the prettier binary.
+even if the binary is there, it doesnt work. im guessing this has something to do with sublime running on windows instead of the linux machine
+pointing the cli flag in the prettier settings in sublime to the windows exe solves this
+
+steps
+1) install prettier with npm globally on the windows machine
+  npm install --global prettier
+2) in sublime, preferences -> package settings -> jsPrettier -> settings user
+  "prettier_cli_path": "C:\\Users\\isaac\\AppData\\Roaming\\npm\\prettier",
+
+*/
+
+
+
+
+/**
+----------------------------------------
+eslint
+----------------------------------------
+
+if i dont npm install eslint on my linux machine, it doesnt work.... does this matter?
+
+*/
