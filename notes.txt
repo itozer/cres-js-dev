@@ -37,6 +37,18 @@ steps
 eslint
 ----------------------------------------
 
-if i dont npm install eslint on my linux machine, it doesnt work.... does this matter?
+all eslint modules, and basically everything supporting it, go in node_modules in program
 
 */
+
+
+
+/**
+----------------------------------------
+general notes
+----------------------------------------
+
+the only thing i need to install on my windows dev machine is prettier. everything else can go in node_modules in the application itself
+
+*/
+
