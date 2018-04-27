@@ -3,10 +3,10 @@ const path = require('path'); //for node??
 module.exports = {
   mode: 'development',
   context: __dirname, //always run from the root directory of the project
-  entry: './js/main.js',
+  entry: './js/app.js',
   devtool: 'cheap-eval-source-map', //inline all of the source maps
   output: {
-    path: path.join(__dirname, 'public'),
+    path: path.join(__dirname, 'dist'),
     filename: 'bundle.js',
   },
   resolve: {
