@@ -1,5 +1,32 @@
 /**
 ----------------------------------------
+tools and technology overview
+----------------------------------------
+
+1) prettier
+  -- js formatter
+2) esLint
+  -- js linting framework
+  -- airbnb linting config
+3) es6
+  -- es6 (ecmascript 2015) current js standard (technically es2017 is current standard)
+  -- substantial update from es5
+  -- native es6 browser support is already pretty good (~ %70 standards compliant back to ie 11)
+  -- modules (code organization and scope)
+4) babel
+  -- js transpiler
+5) webpack
+  -- static module bundler
+  -- browser targets (compatability. works in conjuntion with babel)
+6) npm
+  -- package manager
+  -- dependency handler
+
+*/
+
+
+/**
+----------------------------------------
 webpack
 ----------------------------------------
 
